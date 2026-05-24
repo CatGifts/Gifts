@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CAT GIFTS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0e17;
+            color: white;
+        }
+
+        .app {
+            max-width: 450px;
+            margin: 0 auto;
+            background: #0f121c;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        .header {
+            padding: 24px 20px 16px;
+            background: linear-gradient(135deg, #0f121c 0%, #13172c 100%);
+        }
+
+        .bot-name {
+            font-size: 14px;
+            color: #6b7280;
+            letter-spacing: 0.5px;
+        }
+
+        .main-title {
+            font-size: 32px;
+            font-weight: 800;
+            margin-top: 8px;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #fff, #a5f0c0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+            margin: 20px 20px 16px;
+            background: #1a1e2c;
+            padding: 6px;
+            border-radius: 40px;
+        }
+
+        .nav-tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px 0;
+            border-radius: 34px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: transparent;
+            border: none;
+            color: #8e95b0;
+        }
+
+        .nav-tab.active {
+            background: #2ecc71;
+            color: white;
+            box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
+        }
+
+        .games-section {
+            padding: 0 16px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 16px 4px 8px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .section-link {
+            font-size: 13px;
+            color: #2ecc71;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .game-card {
+            background: #151a28;
+            border-radius: 20px;
+            padding: 12px 6px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.15s;
+            border: 1px solid #252c3e;
+        }
+
+        .game-card:active {
+            transform: scale(0.96);
+        }
+
+        .game-logo-white {
+            background: white;
+            border-radius: 18px;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70px;
+        }
+
+        .game-logo-white img {
+            max-width: 50px;
+            max-height: 50px;
+            object-fit: contain;
+        }
+
+        .game-name {
+            font-size: 11px;
+            font-weight: 600;
+            color: #e2e8f0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .gifts-section {
+            padding: 0 16px;
+        }
+
+        .back-btn {
+            background: #1e2538;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 12px 0 16px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .selected-game-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2ecc71;
+        }
+
+        .gifts-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+
+        .gift-card {
+            background: #151a28;
+            border-radius: 24px;
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border: 1px solid #252c3e;
+        }
+
+        .gift-icon-white {
+            background: white;
+            border-radius: 20px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .gift-icon-white img {
+            max-width: 44px;
+            max-height: 44px;
+        }
+
+        .gift-details {
+            flex: 1;
+        }
+
+        .gift-name {
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .gift-type {
+            font-size: 11px;
+            color: #2ecc71;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .gift-value-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .gift-code {
+            background: #0d0f17;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-family: monospace;
+            font-size: 12px;
+            color: #a5f0c0;
+            word-break: break-all;
+        }
+
+        .copy-btn, .link-btn {
+            background: #2ecc71;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 30px;
+            color: white;
+            font-weight: 700;
+            font-size: 11px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .link-btn {
+            background: #3498db;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 48px 20px;
+            color: #a0a8c0;
+            background: #151a28;
+            border-radius: 24px;
+            font-size: 15px;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2ecc71;
+            color: #0a0e17;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: bold;
+            opacity: 0;
+            transition: 0.2s;
+            pointer-events: none;
+            z-index: 200;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <div class="header">
+        <div class="bot-name">ПОДАРКИ В ЛЮБИМЫХ ИГРАХ</div>
+        <div class="main-title">CAT GIFTS</div>
+    </div>
+
+    <div class="nav-tabs">
+        <button class="nav-tab active" data-type="all">ВСЕ</button>
+        <button class="nav-tab" data-type="link">ССЫЛКИ</button>
+        <button class="nav-tab" data-type="code">ПРОМОКОДЫ</button>
+    </div>
+
+    <div id="gamesScreen">
+        <div class="games-section">
+            <div class="section-header">
+                <div class="section-title">Игры</div>
+                <div class="section-link"></div>
+            </div>
+            <div id="gamesGrid" class="games-grid"></div>
+        </div>
+    </div>
+
+    <div id="giftsScreen" style="display: none;">
+        <div class="gifts-section">
+            <button class="back-btn" id="backBtn">← Назад</button>
+            <div id="giftsGameTitle" class="selected-game-title"></div>
+            <div id="giftsList" class="gifts-list"></div>
+        </div>
+    </div>
+</div>
+<div id="toast" class="toast">Скопировано</div>
+
+<script>
+    let games = [];
+    let gifts = [];
+    let currentGame = null;
+    let currentFilter = "all";
+
+    async function loadData() {
+        try {
+            const gamesRes = await fetch('games.json');
+            const giftsRes = await fetch('gifts.json');
+            if (!gamesRes.ok || !giftsRes.ok) throw new Error();
+            games = await gamesRes.json();
+            gifts = await giftsRes.json();
+            renderGames();
+        } catch(e) {
+            document.getElementById('gamesGrid').innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#6b7280;">Ошибка загрузки</div>';
+        }
+    }
+
+    function renderGames() {
+        const container = document.getElementById('gamesGrid');
+        if (!games.length) {
+            container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px;">Нет игр</div>';
+            return;
+        }
+        container.innerHTML = games.map(game => `
+            <div class="game-card" onclick="openGame('${escapeHtml(game.Game)}')">
+                <div class="game-logo-white">
+                    <img src="${game.Logo}" alt="${game.Game}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'50\' height=\'50\' viewBox=\'0 0 50 50\'%3E%3Crect width=\'50\' height=\'50\' fill=\'%23333\'/%3E%3Ctext x=\'25\' y=\'32\' font-size=\'14\' text-anchor=\'middle\' fill=\'white\'%3E${game.Game.charAt(0)}%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="game-name">${escapeHtml(game.Game)}</div>
+            </div>
+        `).join('');
+    }
+
+    window.openGame = function(gameName) {
+        currentGame = gameName;
+        document.getElementById('giftsGameTitle').innerHTML = escapeHtml(gameName);
+        applyFilterAndRenderGifts();
+        document.getElementById('gamesScreen').style.display = 'none';
+        document.getElementById('giftsScreen').style.display = 'block';
+        window.scrollTo(0, 0);
+    }
+
+    function applyFilterAndRenderGifts() {
+        let filtered = gifts.filter(g => g.Game === currentGame);
+        
+        // Получаем все подарки игры без фильтра
+        const allGameGifts = filtered;
+        
+        if (currentFilter !== 'all') {
+            filtered = filtered.filter(g => g.Type === currentFilter);
+        }
+        
+        renderGifts(filtered, allGameGifts);
+    }
+
+    function renderGifts(giftsArray, allGameGifts) {
+        const container = document.getElementById('giftsList');
+        
+        // Если нет подарков выбранного типа
+        if (!giftsArray.length) {
+            let message = '';
+            const gameName = currentGame;
+            
+            if (currentFilter === 'link') {
+                message = `В ${gameName} нет ссылок на подарки`;
+            } else if (currentFilter === 'code') {
+                message = `В ${gameName} нет промокодов`;
+            } else {
+                // Вкладка "ВСЕ" но подарков нет вообще
+                message = `В ${gameName} нет подарков`;
+            }
+            
+            container.innerHTML = `<div class="empty-state">${escapeHtml(message)}</div>`;
+            return;
+        }
+        
+        // Есть подарки - отображаем их
+        container.innerHTML = giftsArray.map(g => {
+            const isLink = g.Type === 'link';
+            let actionHtml = '';
+            if (isLink) {
+                actionHtml = `
+                    <div class="gift-value-row">
+                        <span class="gift-code">${escapeHtml(g.Link.length > 35 ? g.Link.slice(0,35)+'…' : g.Link)}</span>
+                        <a href="${escapeHtml(g.Link)}" target="_blank" class="link-btn">Открыть</a>
+                        <button class="copy-btn" data-copy="${escapeHtml(g.Link)}">Копировать</button>
+                    </div>
+                `;
+            } else {
+                actionHtml = `
+                    <div class="gift-value-row">
+                        <span class="gift-code">${escapeHtml(g.Code)}</span>
+                        <button class="copy-btn" data-copy="${escapeHtml(g.Code)}">Копировать код</button>
+                    </div>
+                `;
+            }
+            return `
+                <div class="gift-card">
+                    <div class="gift-icon-white">
+                        <img src="${g.Gift_icon}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'44\' height=\'44\' viewBox=\'0 0 44 44\'%3E%3Crect width=\'44\' height=\'44\' fill=\'%23999999\'/%3E%3C/svg%3E'">
+                    </div>
+                    <div class="gift-details">
+                        <div class="gift-name">${escapeHtml(g.Gift)}</div>
+                        <div class="gift-type">${isLink ? 'ССЫЛКА' : 'ПРОМОКОД'}</div>
+                        ${actionHtml}
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const text = btn.getAttribute('data-copy');
+                if (text) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        const toast = document.getElementById('toast');
+                        toast.style.opacity = '1';
+                        setTimeout(() => toast.style.opacity = '0', 1500);
+                    });
+                }
+            });
+        });
+    }
+
+    document.getElementById('backBtn').addEventListener('click', () => {
+        document.getElementById('gamesScreen').style.display = 'block';
+        document.getElementById('giftsScreen').style.display = 'none';
+        currentGame = null;
+    });
+
+    const tabs = document.querySelectorAll('.nav-tab');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            currentFilter = tab.getAttribute('data-type');
+            if (currentGame) {
+                applyFilterAndRenderGifts();
+            }
+        });
+    });
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        });
+    }
+
+    loadData();
+</script>
+</body>
+</html>
