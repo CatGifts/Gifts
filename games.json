@@ -1,1 +1,10 @@
-
+[
+    {
+        "Game": "BRAWL STARS",
+        "Logo": "img/bs.png"
+    }, 
+{
+        "Game": "LEMON BOX",
+        "Logo": "img/lb.png"
+    }
+]
