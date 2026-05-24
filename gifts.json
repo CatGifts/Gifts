@@ -8,9 +8,24 @@
     },
     {
         "Game": "LEMON BOX",
-        "Gift": "ПРОМОКОДЫ НА ГЕМЫ",
+        Giftt": "ПРОМОКОДЫ НА ГЕМЫ",
         "Type": "code",
         "Gift_icon": "img/gem.png",
         "Code": "Andrey, DSR, vezlustars, den4ik, tiger-year, HAPPY-NEW-YEAR, dize, stealy, griff-bonus, gears-update, secret-code, secret, buzz-bonus, brogameyt, stonks, bonus-season14, aura, ahmet, noobik , GuS-bonus, mecha-squad, MOON-BUNNY, sorry, summer, zeronix, nex, nou, Taum, ufc, ssabe, 44upik,  lola, leon , HALLOWEEN-2022 , PremiumPlus , Larrylawrie , 2024 , Kit , BigSor , Damir"
+    }, 
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "100 МОНЕТ",
+        "Type": "link",
+        "Gift_icon": "img/coins.png",
+        "Link": "https://link.brawlstars.com/en/?action=voucher&code=6bb96c6a-bb06-4b06-aae8-4de28c39474d"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "500 МОНЕТ",
+        "Type": "link",
+        "Gift_icon": "img/coins.png",
+        "Link": "https://link.brawlstars.com/es/voucher/24321637-3978-4f14-a258-a1a713d17213/"
     }
+    
 ]
