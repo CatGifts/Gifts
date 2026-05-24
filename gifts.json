@@ -1,1 +1,16 @@
-
+[
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ЗНАЧОК КЛОУНА",
+        "Type": "link",
+        "Gift_icon": "img/clown.png",
+        "Link": "https://link.brawlstars.com/en?action=voucher&code=b647c71d-41a5-42c4-a10f-8d47952d82f3"
+    },
+    {
+        "Game": "LEMON BOX",
+        "Gift": "ПРОМОКОДЫ НА ГЕМЫ",
+        "Type": "code",
+        "Gift_icon": "img/gem.png",
+        "Code": "Andrey, DSR, vezlustars, den4ik, tiger-year, HAPPY-NEW-YEAR, dize, stealy, griff-bonus, gears-update, secret-code, secret, buzz-bonus, brogameyt, stonks, bonus-season14, aura, ahmet, noobik , GuS-bonus, mecha-squad, MOON-BUNNY, sorry, summer, zeronix, nex, nou, Taum, ufc, ssabe, 44upik,  lola, leon , HALLOWEEN-2022 , PremiumPlus , Larrylawrie , 2024 , Kit , BigSor , Damir"
+    }
+]
