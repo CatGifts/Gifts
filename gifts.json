@@ -1,18 +1,11 @@
 [
     {
         "Game": "BRAWL STARS",
-        "Gift": "ЗНАЧОК КЛОУНА",
+        "Gift": "500 МОНЕТ",
         "Type": "link",
-        "Gift_icon": "img/clown.png",
-        "Link": "https://link.brawlstars.com/en?action=voucher&code=b647c71d-41a5-42c4-a10f-8d47952d82f3"
+        "Gift_icon": "img/coins.png",
+        "Link": "https://link.brawlstars.com/es/voucher/24321637-3978-4f14-a258-a1a713d17213/"
     },
-    {
-        "Game": "LEMON BOX",
-        "Gift": "ПРОМОКОДЫ НА ГЕМЫ",
-        "Type": "code",
-        "Gift_icon": "img/gem.png",
-        "Code": "Andrey, DSR, vezlustars, den4ik, tiger-year, HAPPY-NEW-YEAR, dize, stealy, griff-bonus, gears-update, secret-code, secret, buzz-bonus, brogameyt, stonks, bonus-season14, aura, ahmet, noobik , GuS-bonus, mecha-squad, MOON-BUNNY, sorry, summer, zeronix, nex, nou, Taum, ufc, ssabe, 44upik,  lola, leon , HALLOWEEN-2022 , PremiumPlus , Larrylawrie , 2024 , Kit , BigSor , Damir"
-    }, 
     {
         "Game": "BRAWL STARS",
         "Gift": "100 МОНЕТ",
@@ -22,10 +15,100 @@
     },
     {
         "Game": "BRAWL STARS",
-        "Gift": "500 МОНЕТ",
+        "Gift": "ЗНАЧОК ОЧЕНЬ СТРАННЫЕ ДЕЛА",
         "Type": "link",
-        "Gift_icon": "img/coins.png",
-        "Link": "https://link.brawlstars.com/es/voucher/24321637-3978-4f14-a258-a1a713d17213/"
+        "Gift_icon": "img/november.png",
+        "Link": "https://link.brawlstars.com/en/voucher/cbd9bc12-423e-4a32-be45-590b0ebc52ad/"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ЗНАЧОК ЧЕРЕП",
+        "Type": "link",
+        "Gift_icon": "img/skelet.png",
+        "Link": "https://link.brawlstars.com/en/voucher/e4a3bb44-95fd-48d1-9fe6-378619bf2eb9/"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ЗНАЧОК ЯЙЦО ГОДЗИЛЛЫ",
+        "Type": "link",
+        "Gift_icon": "img/egg.png",
+        "Link": "https://link.brawlstars.com/en/?action=voucher&code=cc017c48-b904-448d-9fe1-dd494e28bfd2"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "МУЛЬТЯШНЫЙ ЗНАЧОК",
+        "Type": "link",
+        "Gift_icon": "img/cartoon.png",
+        "Link": "https://link.brawlstars.com/?action=voucher&code=2593e957-9cef-4ce7-b15f-b1dec74ec7df"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ИКОНКА С ЛОГОТИПОМ ИГРЫ",
+        "Type": "link",
+        "Gift_icon": "img/classic.png",
+        "Link": "https://link.brawlstars.com/?action=voucher&code=3484c6d2-9ab5-4eae-878a-4a186fc4e24a"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "СПРЕЙ КАРТА СОКРОВИЩ",
+        "Type": "link",
+        "Gift_icon": "img/map.png",
+        "Link": "https://link.brawlstars.com/en/?action=voucher&code=974a1b0f-b2f7-45c5-978e-bdade83062a1"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "СПРЕЙ SUBWAY SURFERS",
+        "Type": "link",
+        "Gift_icon": "img/surf.png",
+        "Link": "https://link.brawlstars.com/en/voucher/04f69983-0712-49b3-af7a-3718398c4517/"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ЗНАЧОК С ЛАМПОЙ",
+        "Type": "link",
+        "Gift_icon": "img/lamp.png",
+        "Link": "https://link.brawlstars.com/voucher/fad039a8-4850-4a09-b1dd-f673afec5aa7"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ИКОНКА ДИНОЗАВР",
+        "Type": "link",
+        "Gift_icon": "img/dinizavr.png",
+        "Link": "https://link.brawlstars.com/en/?action=voucher&code=935251d2-1647-433e-a6e6-771a6ade9293"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ИКОНКА СПАЙК В КОСМОСЕ",
+        "Type": "link",
+        "Gift_icon": "img/space.png",
+        "Link": "https://link.brawlstars.com/en/?action=voucher&code=ab9cf7c2-45f8-4012-ad38-dfe8b1747c3b"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ИКОНКА КНИГА",
+        "Type": "link",
+        "Gift_icon": "img/book.png",
+        "Link": "https://link.brawlstars.com/?action=voucher&code=91eead0b-0917-4077-8efe-6b852c7e49a3"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ИКОНКА ГУБКА БОБ",
+        "Type": "link",
+        "Gift_icon": "img/sponge.png",
+        "Link": "https://link.brawlstars.com/?action=voucher&code=4c9ea6d6-10f7-430d-a506-201903512c50"
+    },
+    {
+        "Game": "BRAWL STARS",
+        "Gift": "ВТОРАЯ ИКОНКА СО СПАЙКОМ",
+        "Type": "link",
+        "Gift_icon": "img/spike2.png",
+        "Link": "https://link.brawlstars.com/en/voucher/da19cd17-68af-4ed9-8671-b974a3a73356/"
+    },
+    {
+        "Game": "LEMON BOX",
+        "Gift": "ПРОМОКОДЫ НА ГЕМЫ",
+        "Type": "code",
+        "Gift_icon": "img/gem.png",
+        "Code": "Andrey, DSR, vezlustars, den4ik, tiger-year, HAPPY-NEW-YEAR, dize, stealy, griff-bonus, gears-update, secret-code, secret, buzz-bonus, brogameyt, stonks, bonus-season14, aura, ahmet, noobik, GuS-bonus, mecha-squad, MOON-BUNNY, sorry, summer, zeronix, nex, nou, Taum, ufc, ssabe, 44upik, lola, leon, HALLOWEEN-2022, PremiumPlus, Larrylawrie, 2024, Kit, BigSor, Damir"
     }
-    
 ]
